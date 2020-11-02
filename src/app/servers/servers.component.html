@@ -1,8 +1,9 @@
 <p>displaying 2 components server from the servers component template >></p>
 <button
   class="btn btn-primary"
-  [disabled]="!allowNewServer">Add Server </button>
-<p [innerText] = "allowNewServer"></p>
-<p>{{allowNewServer}}</p>
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()">Add Server </button>
+<!--  <p [innerText] = "allowNewServer"></p> -->
+<p>{{serverCreationStatus}}</p>
 <app-server></app-server>
 <app-server></app-server>
