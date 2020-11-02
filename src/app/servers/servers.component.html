@@ -1,4 +1,9 @@
 <p>displaying 2 components server from the servers component template >></p>
+<input
+  type="text"
+  class="form-control"
+  (input)="onUpdateServerName($event)">
+<p>{{ serverName }}</p>
 <button
   class="btn btn-primary"
   [disabled]="!allowNewServer"
